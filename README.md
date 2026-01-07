@@ -61,6 +61,12 @@ Aplicação que exibe informações climáticas com base na localização ou ent
 
 📁 Pasta: `weather_app`
 
+## 🔐 Environment Variables
+
+Create a `.env` file with:
+OPENWEATHER_API_KEY=your_api_key_here
+
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
