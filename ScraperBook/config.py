@@ -1,12 +1,15 @@
-BASE_URL = "https://www.darksidebooks.com.br"
-GRAPHQL_URL = f"{BASE_URL}/_v/segment/graphql/v1"
+# Número de produtos por página
+PAGE_SIZE = 20
 
+# URL base do GraphQL da VTEX
+BASE_URL = "https://www.darksidebooks.com.br/_v/segment/graphql/v1"
+
+# Headers obrigatórios para GraphQL
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+    "Content-Type": "application/json",
     "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "pt-BR,pt;q=0.9",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "Origin": "https://www.darksidebooks.com.br",
+    "Referer": "https://www.darksidebooks.com.br/livros",
+    "x-requested-with": "XMLHttpRequest"
 }
-
-PAGE_SIZE = 12
-REQUEST_DELAY_MIN = 1
-REQUEST_DELAY_MAX = 3
