@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 def fetch_all_books(base_url="https://www.darksidebooks.com.br/livros"):
     """
     Faz scraping de todos os livros da listagem da DarkSideBooks usando Playwright.
-    Retorna uma lista de dicionários com: nome, título, link e imagem. copia
+    Retorna uma lista de dicionários com: nome, título, link e imagem. trecho
     """
 
     books = []
